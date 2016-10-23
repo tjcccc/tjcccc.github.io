@@ -6,7 +6,7 @@
 
 　　网上有很多解决方法，看了一圈，总结思考，写了个相对简单的。代码如下：
 
-```c#
+```csharp
 private float _pressedTime;	// 时间点
 private bool _longPress;	// 计时开关
 
