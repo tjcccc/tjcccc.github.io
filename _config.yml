@@ -31,3 +31,11 @@ theme: minima
 # Github metadata
 gems: ['jekyll-github-metadata']
 repository: tjcccc/tjcccc.github.io
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
