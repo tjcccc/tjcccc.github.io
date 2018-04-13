@@ -26,7 +26,7 @@ github_username:  tjcccc
 markdown: kramdown
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
-theme: TeXt
+theme: jekyll-text-theme
 
 # Github metadata
 gems: ['jekyll-github-metadata']
