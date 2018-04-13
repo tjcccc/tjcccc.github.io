@@ -5,13 +5,16 @@
 ## 2. 一键安装 Shadowsocks （SS）并随安装配置。参考：https://teddysun.com/342.html
 
 ### 2.1 终端执行一键安装脚本：
-```
+
+```shell
 wget --no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh
 chmod +x shadowsocks.sh
 ./shadowsocks.sh 2>&1 | tee shadowsocks.log
 ```
+
 ### 2.2 在 /etc/shadowsocks.json 中可改配置。多用户改法：
-```
+
+```json
 {
     "server":"0.0.0.0",
     "local_address":"127.0.0.1",
@@ -28,25 +31,33 @@ chmod +x shadowsocks.sh
     "fast_open": false
 }
 ```
+
 ### 2.3 服务命令（2015 年 08 月 28 日修正）：
-```
+
+```shell
 启动：/etc/init.d/shadowsocks start
 停止：/etc/init.d/shadowsocks stop
 重启：/etc/init.d/shadowsocks restart
 状态：/etc/init.d/shadowsocks status
 ```
+
 ## 3. 更换 CentOS 7 内核以安装“锐速”——对 SS 进行 TCP 加速。参考：https://www.zhangfangzhou.cn/lotserver.html
 
 ### 3.1 更换内核：
-```
+
+```shell
 rpm -ivh http://file.asuhu.com/kernel/kernel-3.10.0-229.1.2.el7.x86_64.rpm --force
 ```
+
 ### 3.2 设置启动的内核：
-```
+
+```shell
 grub2-set-default `awk -F\' '$1=="menuentry " {print i++ " : " $2}' /etc/grub2.cfg | grep '(3.10.0-229.1.2.el7.x86_64) 7 (Core)'|awk '{print $1}'`
 ```
+
 ### 3.3 重启（reboot）后一键安装“锐速”。全部选默认即可。
-```
+
+```shell
 wget --no-check-certificate -O appex.sh https://raw.githubusercontent.com/0oVicero0/serverSpeeder_Install/master/appex.sh && chmod +x appex.sh && bash appex.sh install
 ```
 
