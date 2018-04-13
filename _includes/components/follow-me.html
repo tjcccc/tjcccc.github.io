@@ -7,7 +7,7 @@
     {%- if site.author.weibo -%}
       <li title="{{ __return | replace: '[NAME]', 'Weibo' }}">
         <div class="floating-action-round-button weibo">
-          <a itemprop="sameAs" href="https://weibo.com/{{ site.author.weibo }}" target="_blank">
+          <a itemprop="sameAs" href="https://weibo.com/p/{{ site.author.weibo }}" target="_blank">
             <div class="icon">{%- include icon/social/weibo.svg -%}</div>
           </a>
         </div>

@@ -1,8 +1,14 @@
+---
+layout: post
+title: How to Setup a Shadowsocks Server on Vultr Host (CentOS 7)
+key: 20180413
+tags: Shadowsocks Vultr
+---
 # 用 Vultr 的 CentOS 7 主机搭建 Shadowsocks 服务器
 
-## 1. Install CentOS 7 as OS on the Vultr host.
+## 1. Install CentOS 7 on the Vultr host
 
-## 2. 一键安装 Shadowsocks （SS）并随安装配置。参考：https://teddysun.com/342.html
+## 2. 一键安装 Shadowsocks (SS) 并随安装配置。参考：https://teddysun.com/342.html
 
 ### 2.1 终端执行一键安装脚本：
 
@@ -11,6 +17,8 @@ wget --no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/
 chmod +x shadowsocks.sh
 ./shadowsocks.sh 2>&1 | tee shadowsocks.log
 ```
+
+<!--more-->
 
 ### 2.2 在 /etc/shadowsocks.json 中可改配置。多用户改法：
 
@@ -32,7 +40,7 @@ chmod +x shadowsocks.sh
 }
 ```
 
-### 2.3 服务命令（2015 年 08 月 28 日修正）：
+### 2.3 服务命令：
 
 ```shell
 启动：/etc/init.d/shadowsocks start

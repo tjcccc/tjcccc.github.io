@@ -5,7 +5,7 @@ default:
     home: /
     all:  /all.html
     rss:  /feed.xml
-  lang: zh
+  lang: en
   sources: bootcss
   toc:
     selectors: 'h1,h2,h3'
