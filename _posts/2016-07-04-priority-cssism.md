@@ -17,14 +17,14 @@ tags: CSS
 　　以一个简单的例子说明一下：
 
 > http://codepen.io/tjcccc/pen/PzmBpb/
-![set up-w124](http://o9iywg0nm.bkt.clouddn.com/2016-07-03-Screen Shot 2016-07-03 at 08.37.45.png)
+> ![set up-w124](http://o9iywg0nm.bkt.clouddn.com/2016-07-03-Screen Shot 2016-07-03 at 08.37.45.png)
 
 这是一个按钮。当鼠标移上去时，其按钮面会变暗；当鼠标点击时，会模拟出”按下去“的交互效果。
 
 　　示例中可看到按钮面上有两个色块。我最初学 CSS 时可能会给他加一张图片让它横向平铺，或者加一个 div 层让它叠加呈现。现在，其实就是一句 background 语句的事。点击效果，以前可能会用 jQuery 去实现，现在我会用伪类样式加CSS动画轻松搞定。详见 CSS：
 
 ```css
-// 在 codepan 中省去了 -webkit- 和 -moz- 等前缀。
+/* 在 codepan 中省去了 -webkit- 和 -moz- 等前缀。 */
 .btn-style {
   width: 120px;
   height: 40px;
