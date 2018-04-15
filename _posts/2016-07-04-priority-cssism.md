@@ -14,6 +14,8 @@ tags: CSS
 
 这也成了我的一个 CSS 设计理念——尽量用最纯粹的CSS语句和最精简的 HTML + CSS 结构去解决样式问题。
 
+<!--more-->
+
 　　以一个简单的例子说明一下：
 
 > http://codepen.io/tjcccc/pen/PzmBpb/
