@@ -16,6 +16,8 @@ tags: Angular Font-Awesome
 
 　　以前习惯于 Font-Awesome 的传统方式：页面底部引用一个 font-awesome.min.css 文件，然后在页面中使用 `<i class="fa xxx"></i>` 放置图标——这在 Angular 里依然可行，不过这并不 Angularish ——我们其实可以用 Angular 模块组件那种方式去实现。写此文时，官网还没有正式上线 Package for Angular, 不过在官方 GitHub 上已经有相关[文档教程](https://github.com/FortAwesome/angular-fontawesome/blob/master/README.md)了，本文以下内容基本遵循该官方文档。
 
+<!--more-->
+
 ## 安装 Package
 
 　　npm 方式：
