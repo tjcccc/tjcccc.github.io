@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Use Font-Awsome in Angular Way
+title: Use Font-Awesome in Angular Way
 key: 20180420
 tags: Angular Font-Awesome
 ---

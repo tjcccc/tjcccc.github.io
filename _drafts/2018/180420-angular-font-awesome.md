@@ -1,4 +1,4 @@
-# Use Font-Awsome in Angular Way
+# Use Font-Awesome in Angular Way
 
 ## 环境
 
