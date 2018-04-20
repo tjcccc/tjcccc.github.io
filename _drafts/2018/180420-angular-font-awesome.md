@@ -64,7 +64,7 @@ export class AppComponent {
 注意这里导入的图标名字要加 fa 前缀，并使用 camelCase 命名法。导入后，你便可以在 html 模板中用以下方式使用图标：
 
 ```html
-<fa-icon [icon]="coffee"></fa-icon>
+<fa-icon [icon]="myIcon"></fa-icon>
 ```
 
 注意在 html 模板中要直接使用图标名。图标可在官网[图标库](https://fontawesome.com/icons)查询。
