@@ -4,8 +4,7 @@ title: SSH Brute Force Attacks Prevention
 key: 20180424
 tags: SSH
 ---
-
-## 防止 SSH 暴力登陆尝试攻击
+# 防止 SSH 暴力登陆尝试攻击
 
 　　昨日经朋友提醒，注意到登录 SSH 后，有很多其他 IP 错误登录的提示——原来是遭受了所谓 SSH 暴力登录尝试攻击。他们有些来自黑客，有些可能来自……
 
