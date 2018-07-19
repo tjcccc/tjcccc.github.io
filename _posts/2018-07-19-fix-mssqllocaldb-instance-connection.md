@@ -18,7 +18,7 @@ tags: MSSQL LocalDB
 
 　　打开注册表，定位到:
 
-```shell
+```txt
 HKEY_CURRENT_USER\SOFTWARE\Microsoft\Microsoft SQL Server\UserInstances
 ```
 
@@ -35,20 +35,20 @@ HKEY_CURRENT_USER\SOFTWARE\Microsoft\Microsoft SQL Server\UserInstances
 
 　　还有一个问题，是在解决上面问题过程中偶然发现的——当我在命令行中查看 LocalDB 版本时，报错：
 
-```shell
+```txt
 > sqlllocaldb v
 Windows API call "RegGetValueW" returned error code: 0
 ```
 
 　　网上一搜，也是注册表的问题——版本号冲突：
 
-```shell
+```txt
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\MSSQL13E.LOCALDB\MSSQLServer\CurrentVersion
 ```
 
 这里的版本是 13.1.4001.0，而：
 
-```shell
+```txt
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server Local DB\Installed Versions
 ```
 
