@@ -61,5 +61,3 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server Local DB\Installed Ve
 　　……
 
 　　真是麻烦啊。
-
-1807191254
