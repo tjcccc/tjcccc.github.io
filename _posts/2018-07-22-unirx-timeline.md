@@ -14,7 +14,7 @@ tags: UniRx Unity
 
 　　用 Coroutine 方式：
 
-```C#
+```csharp
 IEnumerator Play()
 {
     DoA();
@@ -28,7 +28,7 @@ StartCoroutine(Play());
 
 用 DOTween CallBack 方式：
 
-```C#
+```csharp
 DoA().OnComplete(() =>
 {
     DoB().SetDelay(3).OnComplete(() =>
@@ -40,7 +40,7 @@ DoA().OnComplete(() =>
 
 这些做法并无不妥，但我在学习 UniRX 之后发现了更加逻辑清晰的方式，那就是实现一个 Timeline 时间轴：
 
-```C#
+```csharp
 void PlayTimeline()
 {
     // 设置计时器
