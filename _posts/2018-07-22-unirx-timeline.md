@@ -10,7 +10,7 @@ tags: UniRx Unity
 
 　　举个抽象例子：一开始执行 A ——第 3 秒执行 B ——第 5 秒执行 C
 
-<!-- more -->
+<!--more-->
 
 　　用 Coroutine 方式：
 
