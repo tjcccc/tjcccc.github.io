@@ -38,8 +38,8 @@ void PlayTimeline()
     // 设置计时器
     var timer = new IntReactiveProperty(0);
 
-    // 以 60 frames 为 1 秒计时
-    timer.SampleFrame(60).BatchFrame().Subscribe(_ => timer.Value += 1);
+    // 将 1 秒所用的 frames 作为间隔参数，进行每秒执行
+    timer.SampleFrame((int)(1 / Time.deltaTime)).BatchFrame().Subscribe(_ => timer.Value += 1);
 
     // 根据时间表安排执行任务
     timer.Where(t => t == 1).Subscribe(_ => DoA());
