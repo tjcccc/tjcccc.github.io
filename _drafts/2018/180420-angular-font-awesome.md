@@ -15,16 +15,16 @@
 　　npm 方式：
 
 ```shell
-$ npm install @fortawesome/fontawesome-svg-core --save
-$ npm install @fortawesome/free-solid-svg-icons --save
-$ npm install @fortawesome/angular-fontawesome --save
+npm install @fortawesome/fontawesome-svg-core --save
+npm install @fortawesome/free-solid-svg-icons --save
+npm install @fortawesome/angular-fontawesome --save
 ```
 
 其中「free-solid-svg-icons」是经典样式，其他还有「regular」和「light」可选：
 
 ```shell
-$ npm install @fortawesome/free-brands-svg-icons --save
-$ npm install @fortawesome/free-regular-svg-icons --save
+npm install @fortawesome/free-brands-svg-icons --save
+npm install @fortawesome/free-regular-svg-icons --save
 ```
 
 ## 在 app.module.ts 中导入基本模块
