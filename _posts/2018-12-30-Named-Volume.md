@@ -101,18 +101,18 @@ mysql -u root -p{password}
 
 You can change `root`'s password:
 
-```mysql
+~~~sql
 alter user 'root'@'localhost' identified with mysql_native_password BY {'password'};
 flush privileges;
-```
+~~~
 
 Or create a new admin account:
 
-```mysql
+~~~sql
 create user {'username'@'host'} identified with mysql_native_password by {'password'};
 grant all privileges on {database} to {'username'@'server'};
 flush privileges;
-```
+~~~
 
 - `{'username'@'host'}`: 'host' could be 'localhost' or '%'. '%' means the account can be accessed from any ip.
 - `{database}`: `*.*` means all.
