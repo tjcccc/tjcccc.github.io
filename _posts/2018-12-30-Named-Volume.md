@@ -136,6 +136,8 @@ Mount data volume and backup directory to a temporary container. Then, untar the
 docker run --rm --volumes-from {mysql_container_name} -v $(pwd):/backup centos bash -c "cd /var/lib && rm -rf mysql/* && tar xvf /backup/{backup_file_name}.tar --strip 2"
 ```
 
+- For PowerShell, use `${pwd}` instead of `$(pwd)`.
+
 Restart the MySQL container to make the restored data works:
 
 ```shell
