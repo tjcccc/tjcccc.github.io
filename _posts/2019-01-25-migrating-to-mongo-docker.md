@@ -1,3 +1,9 @@
+---
+layout: post
+title: Migrating My Localhost MongoDB Data to Docker Container
+key: 20190125
+tags: Docker MongoDB
+---
 # Migrating My Localhost MongoDB Data to Docker Container
 
 ## Create MongoDB Container
