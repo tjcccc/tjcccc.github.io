@@ -14,7 +14,7 @@ tags: ChromeExtension
 
 插件是用 JS 写的，写方法并不难，难的是了解它运行的模式和结构。
 
-<!-- more -->
+<!--more-->
 
 配置文件 `manifest.json` 是一切的开始，其中要配置几个关键内容：`background`, `content`, `page_action`：
 
