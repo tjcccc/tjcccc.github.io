@@ -18,6 +18,8 @@ WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status
 
 Although the official Python documentation suggests running the `Install Certificates.command` script after Python is installed, you will still get the same error when you run the script.
 
+<!--more-->
+
 ## Solution
 
 First, you need to install the `certifi` package manually with the `--trusted-host` option to bypass the SSL verification:
